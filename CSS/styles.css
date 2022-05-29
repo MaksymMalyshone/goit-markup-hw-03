@@ -114,11 +114,6 @@ img {
 	display: inline-block;
 }
 
-.header-nav {
-	margin-left: 93px;
-	margin-right: 50px;
-}
-
 .header-contacts {
 	display: flex;
 	margin-left: auto;
@@ -161,6 +156,8 @@ img {
 .hero {
 	background-color: var(--nav-fon-color);
 	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 .hero-title {
 	font-weight: 900;
@@ -172,7 +169,7 @@ img {
 	color: var(--first-fon-color);
 	margin-left: auto;
 	margin-right: auto;
-	width: 600px;
+	width: 696px;
 }
 .hero-btn {
 	font-family: inherit;
@@ -187,6 +184,8 @@ img {
 	box-shadow: var(--first-shadow-color);
 	border-radius: 4px;
 	cursor: pointer;
+	min-width: 200px;
+	min-height: 50px;
 }
 
 .hero-btn:hover,
@@ -195,12 +194,35 @@ img {
 }
 /* Benefits---------------------------------------------------- */
 
+.benefits {
+	padding-top: 94px;
+	padding-bottom: 0px;
+}
+
+.benefits-section {
+	display: flex;
+}
+
+.benefits-list {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	margin-right: 0px;
+}
+
+.benefits-item {
+	min-width: 271px;
+	min-height: 101px;
+	margin-right: 30px;
+}
+
 .benefits-title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
 	color: var(--primary-tex-color);
+	margin-bottom: 10px;
 }
 .benefits-text {
 	line-height: 1.71;
@@ -208,27 +230,62 @@ img {
 }
 
 /* GALLERY-------------------------------------------------------- */
+.gallery {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .gallery-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
 	color: var(--primary-tex-color);
+	margin-bottom: 50px;
+}
+
+.gallery-list {
+	display: flex;
+	align-items: center;
+}
+
+.gallery-item:not(:last-child) {
+	margin-right: 30px;
 }
 
 /* TEAM--------------------------------------------------------------*/
 .section-team {
 	background-color: var(--second-fon-color);
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
+
+.list-command {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.team-list {
+	display: flex;
+	margin-right: 30px;
+}
+
 .team-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
+	margin-bottom: 50px;
 	color: var(--primary-tex-color);
 }
+
 .team-item {
-	background: var(--first-fon-color);
+	padding-bottom: 30px;
+	background: #ffffff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
 }
 .team-member {
 	font-weight: 500;
@@ -294,6 +351,18 @@ img {
 	cursor: pointer;
 	letter-spacing: 0.03em;
 	box-shadow: var(--first-shadow-color);
+
+	/* display: inline-block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background: #f5f4fa;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; */
 }
 
 .btn:hover,
