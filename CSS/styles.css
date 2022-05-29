@@ -18,6 +18,35 @@ body {
 	font-size: 14px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -32,10 +61,22 @@ body {
 	overflow: hidden;
 }
 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	outline: 1px solid red;
+}
+
 /* HEADER-------------------------------------------------------- */
 
 .header {
 	background-color: var(--first-fon-color);
+	padding-top: 25px;
+	padding: bottom 25px;
+
+	border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -46,16 +87,12 @@ body {
 	text-decoration: none;
 }
 
+.header-list {
+	display: flex;
+	align-items: center;
+}
 .accent {
 	color: var(--accent-color);
-}
-
-.list {
-	list-style-type: none;
-}
-
-.link {
-	text-decoration: none;
 }
 
 .header-link {
@@ -89,6 +126,7 @@ body {
 /* HERO-------------------------------------------------------- */
 .hero {
 	background-color: var(--nav-fon-color);
+	text-align: center;
 }
 .hero-title {
 	font-weight: 900;
