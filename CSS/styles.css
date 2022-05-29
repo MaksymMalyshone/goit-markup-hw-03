@@ -41,6 +41,11 @@ img {
 	height: auto;
 }
 
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .list {
 	list-style: none;
 	font-style: normal;
@@ -70,7 +75,7 @@ img {
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 /* HEADER-------------------------------------------------------- */
@@ -256,19 +261,20 @@ img {
 /* TEAM--------------------------------------------------------------*/
 .section-team {
 	background-color: var(--second-fon-color);
-	padding-top: 94px;
-	padding-bottom: 94px;
 }
 
 .list-command {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .team-list {
 	display: flex;
 	margin-right: 30px;
+	list-style: none;
+	font-style: normal;
+
+	padding: 0px;
 }
 
 .team-title {
@@ -278,14 +284,11 @@ img {
 	text-align: center;
 	margin-bottom: 50px;
 	color: var(--primary-tex-color);
+	display: flex;
 }
 
-.team-item {
-	padding-bottom: 30px;
-	background: #ffffff;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 4px 4px;
-	text-align: center;
+.team-item:not(:last-child) {
+	margin-right: 30px;
 }
 .team-member {
 	font-weight: 500;
@@ -306,6 +309,13 @@ img {
 	background-color: var(--nav-fon-color);
 }
 
+.page-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 60px 0px;
+}
+
 .logo-footer {
 	font-family: var(--main-font-family);
 	font-weight: 700;
@@ -313,6 +323,17 @@ img {
 	line-height: 1.19;
 	color: var(--first-fon-color);
 	text-decoration: none;
+}
+
+.contacts-list {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.contacts-item:not(:last-child) {
+	display: flex;
+	margin-bottom: 9px;
 }
 
 .contacts-link {
