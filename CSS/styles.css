@@ -16,6 +16,8 @@ body {
 	letter-spacing: 0.03em;
 	background: var(--first-fon-color);
 	font-size: 14px;
+	margin: 0;
+	padding: 0;
 }
 
 h1,
@@ -40,7 +42,8 @@ img {
 }
 
 .list {
-	list-style-type: none;
+	list-style: none;
+	font-style: normal;
 }
 
 .link {
@@ -67,33 +70,39 @@ img {
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 /* HEADER-------------------------------------------------------- */
 
 .header {
 	background-color: var(--first-fon-color);
-	padding-top: 25px;
-	padding: bottom 25px;
+
 	display: flex;
 	border-bottom: 1px solid #ececec;
 }
 
 .header-flex {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
 }
 
 .header-nav {
 	display: flex;
 	align-items: center;
+	margin-right: 50px;
 }
 
 .header-list {
 	display: flex;
-	align-items: center;
+	margin-left: 93px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.header-item {
+	margin-left: 50px;
 }
 
 .logo {
@@ -104,6 +113,17 @@ img {
 	text-decoration: none;
 	display: inline-block;
 }
+
+.header-nav {
+	margin-left: 93px;
+	margin-right: 50px;
+}
+
+.header-contacts {
+	display: flex;
+	margin-left: auto;
+}
+
 .accent {
 	color: var(--accent-color);
 }
@@ -129,6 +149,7 @@ img {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--secondary-tex-color);
+	margin-left: 50px;
 }
 
 .header-contacts-link:hover,
@@ -149,6 +170,9 @@ img {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--first-fon-color);
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
 }
 .hero-btn {
 	font-family: inherit;
