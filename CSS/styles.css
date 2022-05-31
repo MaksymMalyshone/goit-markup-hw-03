@@ -279,10 +279,14 @@ img {
 
 .team-list {
 	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.team-list:not(:last-child) {
 	margin-right: 30px;
-	list-style: none;
-	font-style: normal;
-	padding: 0px;
 }
 
 .team-title {
