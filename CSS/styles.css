@@ -86,7 +86,6 @@ img {
 
 .header {
 	background-color: var(--first-fon-color);
-	display: flex;
 	border-bottom: 1px solid #ececec;
 }
 
@@ -97,20 +96,18 @@ img {
 }
 
 .header-nav {
-	display: flex;
 	align-items: center;
-	margin-right: 50px;
+	margin-left: 93px;
 }
 
 .header-list {
 	display: flex;
-	margin-left: 93px;
 }
 
 /* :nth-child(1) */
 
 .header-item {
-	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .logo {
@@ -119,9 +116,12 @@ img {
 	line-height: 1.19;
 	color: var(--primary-tex-color);
 	text-decoration: none;
-	display: inline-block;
-}
+	/* display: inline-block; */
 
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+}
 .header-contacts {
 	display: flex;
 	margin-left: auto;
