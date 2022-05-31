@@ -6,8 +6,10 @@
 	--second-fon-color: #f5f4fa;
 	--nav-fon-color: #2f303a;
 	--first-shadow-color: 0px 4px 4px rgb(0 0 0 / 15%);
+	--secondary-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	--main-font-family: "Raleway", sans-serif;
 	--second-font-family: "Roboto", sans-serif;
+	--border-color: #eeeeee;
 }
 
 body {
@@ -272,7 +274,6 @@ img {
 }
 
 .list-command {
-	/* display: flex; */
 	align-items: center;
 }
 
@@ -281,7 +282,6 @@ img {
 	margin-right: 30px;
 	list-style: none;
 	font-style: normal;
-
 	padding: 0px;
 }
 
@@ -295,8 +295,8 @@ img {
 }
 
 .team-item {
-	background: #ffffff;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	background: var(--first-fon-color);
+	box-shadow: var(--secondary-shadow);
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -305,13 +305,16 @@ img {
 }
 
 .team-card {
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .team-member {
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.18x;
+	line-height: 1.18px;
 	text-align: center;
+	margin-bottom: 10px;
 	color: var(--primary-tex-color);
 }
 .team-text {
@@ -435,4 +438,12 @@ img {
 	font-size: 16px;
 	line-height: 1.87;
 	color: var(--secondary-tex-color);
+}
+
+.projects-work {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: var(--first-fon-color);
+	border: 1px solid var(--border-color);
+	padding-left: 24px;
 }
