@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>goit-markup-hw-02</title>
+		<title>goit-markup-hw-03</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -32,8 +32,8 @@
 				</a>
 				<nav class="header-nav">
 					<ul class="header-list list">
-						<li class="header-item"><a href="./index.html" class="header-link link">Студия</a></li>
-						<li class="header-item"><a href="./portfolio.html" class="header-link link current">Портфолио</a></li>
+						<li class="header-item"><a href="./index.html" class="header-link link current">Студия</a></li>
+						<li class="header-item"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
 						<li class="header-item"><a href="" class="header-link link">Контакты</a></li>
 					</ul>
 				</nav>
@@ -51,8 +51,8 @@
 		<main>
 			<!-- Filter button -->
 			<section class="section btn-projects">
+				<h1 class="filters visually-hidden">Filters</h1>
 				<div class="container">
-					<h1 class="filters visually-hidden">Filters</h1>
 					<ul class="filter-list list">
 						<li class="filter-item"><button type="button" class="btn current">Все</button></li>
 						<li class="filter-item"><button type="button" class="btn">Веб-сайты</button></li>
@@ -60,10 +60,9 @@
 						<li class="filter-item"><button type="button" class="btn">Дизайн</button></li>
 						<li class="filter-item"><button type="button" class="btn">Маркетинг</button></li>
 					</ul>
-				</div>
 
-				<!-- Projects -->
-				<div class="container">
+					<!-- Projects -->
+
 					<ul class="projects-list list">
 						<li class="projects-item">
 							<a class="project-link link" href="">
@@ -153,34 +152,32 @@
 
 		<!-- Футер -->
 		<footer class="footer">
-			<section class="section page-footer">
-				<div class="container">
-					<a href="./index.html" class="logo-footer">
-						<span class="accent">Web</span>
-						Studio
-					</a>
-					<address class="contacts-address">
-						<ul class="contacts-list list">
-							<li class="contacts-item">
-								<a
-									href="https://goo.gl/maps/1LbGTkgGGpXqYZ2G8"
-									target="_blank"
-									rel="noopener noreferrer"
-									class="contacts-link link"
-								>
-									г.Киев, пр-т Леси Украинки, 26
-								</a>
-							</li>
-							<li class="contacts-item">
-								<a class="footer-contacts-link link" href="mailto:info@example.com">info@example.com</a>
-							</li>
-							<li class="contacts-item">
-								<a class="footer-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-							</li>
-						</ul>
-					</address>
-				</div>
-			</section>
+			<div class="container">
+				<a href="./index.html" class="logo-footer">
+					<span class="accent">Web</span>
+					Studio
+				</a>
+				<address class="contacts-address">
+					<ul class="contacts-list list">
+						<li class="footer-contacts-item">
+							<a
+								href="https://goo.gl/maps/1LbGTkgGGpXqYZ2G8"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="contacts-link link"
+							>
+								г.Киев, пр-т Леси Украинки, 26
+							</a>
+						</li>
+						<li class="footer-contacts-item">
+							<a class="footer-contacts-link link" href="mailto:info@example.com">info@example.com</a>
+						</li>
+						<li class="footer-contacts-item">
+							<a class="footer-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+						</li>
+					</ul>
+				</address>
+			</div>
 		</footer>
 	</body>
 </html>
